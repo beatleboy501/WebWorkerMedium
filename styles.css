@@ -1,0 +1,57 @@
+#weather-updates {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #cfdaf9;
+}
+
+#weather-updates h1 {
+    font-family: Arial;
+    font-size: 3em;
+    width: 100%;
+    background-color: #005986;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 0.5em;
+    line-height: 2em;
+}
+
+#weather-updates h2 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 700;
+}
+
+#weather-updates #weather-container {
+    margin-top: 20px;
+    height: 100%;
+}
+
+#weather-updates .weather-info {
+    display: none;
+    width: 80vw;
+    border-radius: 0.5em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    margin-bottom: 10px;
+    background-image: linear-gradient(0deg,#d8eeee,#d8eeee 40%,#64b3c9 80%,#005986); 
+}
+
+#weather-updates #loading {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #005986;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
